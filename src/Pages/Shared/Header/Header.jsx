@@ -20,9 +20,8 @@ const Header = () => {
                         title='Master-chef'
                         className='inline-flex items-center'
                     >
-                        <span className='ml-2 inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
-                            <img src="https://img.icons8.com/plasticine/60/null/codechef.png" />
-                            <span className='text-red-600'>FOOD</span>VALLY
+                        <span className='inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
+                        <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design"/><span className='text-red-600'>DISNEY</span>SHOP
                         </span>
                     </Link>
                     <ul className='items-center hidden space-x-8 lg:flex'>
@@ -108,7 +107,7 @@ const Header = () => {
                                                 className='inline-flex items-center'
                                             >
                                                 <span className=' text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                                                    <span className='text-red-600'>Food</span>Vally
+                                                    <span className='text-red-600'>Disney</span>Shop
                                                 </span>
                                             </Link>
                                         </div>
