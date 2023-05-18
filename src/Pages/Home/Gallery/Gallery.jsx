@@ -5,8 +5,8 @@ const Gallery = ({ gallery }) => {
     const { image } = gallery;
     return (
         <>
-            <div data-aos="fade-up"
-                data-aos-duration="3000" className="card card-compact w-full py-9 bg-base-100 shadow-xl hover:-translate-y-7 transition ease-in-out delay-250">
+            <div className="card card-compact w-full py-9 bg-base-100 shadow-xl hover:-translate-y-7 transition ease-in-out delay-250" 
+            >
                 <LazyLoadImage
                     className='w-72 h-72 mx-auto' src={image} alt=""
                     effect="blur"

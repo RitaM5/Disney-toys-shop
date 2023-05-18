@@ -23,7 +23,7 @@ const Home = () => {
             <div className='my-container'>
                 <h1 className='underline underline-offset-4 font-semibold text-2xl text-center'>Gallery</h1>
                 <h2 className='mt-4 text-lg text-center'>We make your children happier with the best toys</h2>
-                <div className='grid grid-cols-3 gap-5 my-9'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-9'>
                     {
                         galleries.map(gallery => <Gallery key={gallery.id} gallery={gallery}></Gallery>)
                     }

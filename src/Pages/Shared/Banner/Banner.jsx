@@ -7,7 +7,7 @@ const Banner = () => {
             <div id="slide1" className="carousel-item relative w-full">
                 <img src='https://i.ibb.co/4jBqysR/bg-1.jpg' className="w-full" />
                 <div className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
-                    <div className='text-white text-center space-y-7 pl-12'>
+                    <div className='text-white text-center space-y-7 pl-12' data-aos="zoom-in">
                         <h2 className='text-6xl font-semibold'>
                             Pick the best toy<br />
                             for your kid
@@ -23,7 +23,7 @@ const Banner = () => {
             </div>
             <div id="slide2" className="carousel-item relative w-full">
                 <img src={img2} className="w-full" />
-                <div className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
+                <div data-aos="zoom-in" className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
                     <div className='text-white text-center space-y-7 pl-12'>
                         <h2 className='text-6xl font-semibold'>
                             Get a bonus after<br />
@@ -40,7 +40,7 @@ const Banner = () => {
             </div>
             <div id="slide3" className="carousel-item relative w-full">
                 <img src={img4} className="w-full" />
-                <div className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
+                <div data-aos="zoom-in" className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
                     <div className='text-white text-center space-y-7 pl-12'>
                         <h2 className='text-6xl font-semibold'>
                             Pick the best toy<br />
