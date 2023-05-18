@@ -21,7 +21,7 @@ const Header = () => {
                         className='inline-flex items-center'
                     >
                         <span className='inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
-                        <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design"/><span className='text-yellow-500'>DISNEY</span><span className='text-green-700'>SHOP</span>
+                            <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design" /><span className='text-yellow-500'>DISNEY</span><span className='text-green-700'>SHOP</span>
                         </span>
                     </Link>
                     <ul className='items-center hidden space-x-8 lg:flex'>
@@ -35,6 +35,40 @@ const Header = () => {
                                 Home
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                to='/alltoys'
+                                aria-label='All Toys'
+                                title='All Toys'
+                                className={({ isActive }) => (isActive ? 'active' : 'default')}
+                            >
+                                All Toys
+                            </NavLink>
+                        </li>
+                        {
+                            user && <li>
+                                <NavLink
+                                    to='/mytoys'
+                                    aria-label='My Toys'
+                                    title='My Toys'
+                                    className={({ isActive }) => (isActive ? 'active' : 'default')}
+                                >
+                                    My Toys
+                                </NavLink>
+                            </li>
+                        }
+                        {
+                            user && <li>
+                                <NavLink
+                                    to='/addatoys'
+                                    aria-label='Add A Toy'
+                                    title='Add A Toy'
+                                    className={({ isActive }) => (isActive ? 'active' : 'default')}
+                                >
+                                    Add A Toy
+                                </NavLink>
+                            </li>
+                        }
                         <li>
                             <NavLink
                                 to='/blog'
@@ -139,6 +173,40 @@ const Header = () => {
                                                     Home
                                                 </Link>
                                             </li>
+                                            <li>
+                                                <Link
+                                                    to='/alltoys'
+                                                    aria-label='All Toys'
+                                                    title='All Toys'
+                                                    className=' font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    All Toys
+                                                </Link>
+                                            </li>
+                                            {
+                                                user && <li>
+                                                <Link
+                                                    to='/mytoys'
+                                                    aria-label='My Toys'
+                                                    title='My Toys'
+                                                    className=' font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    My Toys
+                                                </Link>
+                                            </li>
+                                            }
+                                            {
+                                                user && <li>
+                                                <Link
+                                                    to='/addatoy'
+                                                    aria-label='Add A Toy'
+                                                    title='Add A Toy'
+                                                    className=' font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                >
+                                                    Add A Toy
+                                                </Link>
+                                            </li>
+                                            }
                                             <li>
                                                 <Link
                                                     to='/blog'

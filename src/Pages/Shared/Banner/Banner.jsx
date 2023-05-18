@@ -47,7 +47,7 @@ const Banner = () => {
                             for your kid
                         </h2>
                         <p className=''>We offer a premium sevice, whether you are shopping at one of our flagship stores or via our website!</p>
-                        <button className="btn btn-outline btn-secondary">Discover Now</button>
+                        <button className="btn btn-outline btn-warning">Discover Now</button>
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
