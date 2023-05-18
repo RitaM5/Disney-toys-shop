@@ -5,5 +5,5 @@
     @apply px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2
 }
 .active{
-    @apply font-medium tracking-wide text-cyan-600 transition-colors duration-200
+    @apply font-medium tracking-wide text-cyan-800 transition-colors duration-200
   }

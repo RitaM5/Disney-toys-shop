@@ -11,7 +11,7 @@ const Header = () => {
             .catch(error => console.log(error));
     }
     return (
-        <header className='bg-base-200'>
+        <header className='bg-green-100'>
             <div className='my-container'>
                 <div className='flex items-center justify-between'>
                     <Link
@@ -21,7 +21,7 @@ const Header = () => {
                         className='inline-flex items-center'
                     >
                         <span className='inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
-                        <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design"/><span className='text-red-600'>DISNEY</span>SHOP
+                        <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design"/><span className='text-yellow-500'>DISNEY</span><span className='text-green-700'>SHOP</span>
                         </span>
                     </Link>
                     <ul className='items-center hidden space-x-8 lg:flex'>
@@ -54,7 +54,7 @@ const Header = () => {
                             </p>
                         }
                         {
-                            user ? <button onClick={handleLogOut} className='bg-blue-900 py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
+                            user ? <button onClick={handleLogOut} className='bg-green-300 py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
                                 SignOut
                             </button> :
                                 <Link to="/login">
@@ -66,7 +66,7 @@ const Header = () => {
                         {
                             user ? '' :
                                 <Link to="/signup">
-                                    <button className='bg-[#7E90FE] py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
+                                    <button className='bg-[#6f7391] py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
                                         SignUp
                                     </button>
                                 </Link>
@@ -107,7 +107,7 @@ const Header = () => {
                                                 className='inline-flex items-center'
                                             >
                                                 <span className=' text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                                                    <span className='text-red-600'>Disney</span>Shop
+                                                    <span className='text-yellow-500'>Disney</span><span className='text-green-600'>Shop</span>
                                                 </span>
                                             </Link>
                                         </div>
@@ -134,7 +134,7 @@ const Header = () => {
                                                     to='/'
                                                     aria-label='Home'
                                                     title='Home'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className=' font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     Home
                                                 </Link>
@@ -169,7 +169,7 @@ const Header = () => {
                                                 {
                                                     user ? '' :
                                                         <Link to="/signup">
-                                                            <button className='bg-[#7E90FE] py-2 px-4 text-white rounded-md'>
+                                                            <button className='bg-[#6f7391] py-2 px-4 text-white rounded-md'>
                                                                 SignUp
                                                             </button>
                                                         </Link>
