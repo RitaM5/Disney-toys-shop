@@ -34,9 +34,7 @@ const Home = () => {
             </div>
             <div className='my-12 my-container'>
                 <ShopCategory></ShopCategory>
-                <Link to='/#'>
-                    <AllToysSection></AllToysSection>
-                </Link>
+                <AllToysSection></AllToysSection>
             </div>
         </div>
     );
