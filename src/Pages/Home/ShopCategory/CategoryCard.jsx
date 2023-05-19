@@ -5,7 +5,7 @@ import Rating from 'react-rating';
 const CategoryCard = ({ product }) => {
     const { _id, toy_name, price, ratings, toy_img } = product;
     return (
-        <div className="card w-full bg-lime-200 shadow-xl">
+        <div className="card w-full bg-lime-100 shadow-xl">
             <figure><img className='mt-5 rounded-xl hover:scale-125 ease-in-out duration-500 ' src={toy_img} alt="dolls" /></figure>
             <div className="card-body text-left">
                 <h2 className="card-title">

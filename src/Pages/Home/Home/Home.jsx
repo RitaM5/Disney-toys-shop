@@ -1,9 +1,7 @@
 import React from 'react';
 import Banner from '../../Shared/Banner/Banner';
 import Gallery from '../Gallery/Gallery';
-import { Link } from 'react-router-dom';
 import ShopCategory from '../ShopCategory/ShopCategory';
-import AllToysSection from '../../Shared/AllToysSection/AllToysSection';
 const Home = () => {
     const galleries = [
         { id: 1, image: "https://i.ibb.co/Tgy6tCt/princess-1.jpg" },
@@ -34,7 +32,6 @@ const Home = () => {
             </div>
             <div className='my-12 my-container'>
                 <ShopCategory></ShopCategory>
-                <AllToysSection></AllToysSection>
             </div>
         </div>
     );
