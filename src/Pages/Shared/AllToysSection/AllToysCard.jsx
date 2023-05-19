@@ -16,7 +16,7 @@ const AllToysCard = ({ product }) => {
                 <p><span className='font-semibold'>Quantity:</span> {quantity}</p>
                 <p><span className='font-semibold'>Price:</span> {price} $</p>
                 <div className="card-actions justify-end">
-                    <Link to ={`/details/${_id}`}>
+                    <Link to ={`/details/${_id}`} state={product?.toy_name}>
                         <div className="badge badge-outline px-4 py-4 btn-primary font-semibold">Details</div>
                     </Link>
                 </div>

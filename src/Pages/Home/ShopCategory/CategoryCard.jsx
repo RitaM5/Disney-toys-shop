@@ -23,7 +23,7 @@ const CategoryCard = ({ product }) => {
                     ></Rating>
                 </p>
                 <div className="card-actions justify-end">
-                    <Link to={`/details/${_id}`}>
+                    <Link to={`/details/${_id}`} state={product?.toy_name}>
                         <div className="badge badge-outline px-4 py-4 btn-primary font-semibold">Details</div>
                     </Link>
                 </div>
