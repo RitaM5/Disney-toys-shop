@@ -6,6 +6,8 @@ import Signup from "../Pages/Home/Signup/Signup";
 import Login from "../Pages/Home/Login/Login";
 import Blog from "../Pages/Home/Blog/Blog";
 import AllToys from "../Pages/Home/AllToys/AllToys";
+import Details from "../Pages/Shared/Details/Details";
+import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -26,8 +28,13 @@ const router = createBrowserRouter([
                 element: <Signup></Signup>
             },
             {
-               path: 'alltoys',
-               element: <AllToys></AllToys>
+                path: 'alltoys',
+                element: <AllToys></AllToys>
+            },
+            {
+                path: 'details/:id',
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://disney-dolls-server.vercel.app/products/${params.id}`)
             },
             {
                 path: 'blog',

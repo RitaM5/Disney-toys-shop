@@ -6,7 +6,7 @@ const AllToys = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className='my-8'>
+            <div className='my-8 my-container'>
                 <AllToysSection></AllToysSection>
             </div>
         </div>

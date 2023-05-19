@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className='my-container'>
+            <div className='my-container mx-auto text-center'>
                 <h1 className='underline underline-offset-4 font-semibold text-2xl text-center'>Gallery</h1>
                 <h2 className='mt-4 text-lg text-center'>We make your children happier with the best toys</h2>
                 <div data-aos="fade-up"
@@ -33,7 +33,7 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div className='my-12 my-container'>
+            <div className='my-12 my-container mx-auto text-center'>
                 <Link to='/#'>
                     <AllToysSection></AllToysSection>
                 </Link>
