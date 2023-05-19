@@ -4,7 +4,6 @@ import Gallery from '../Gallery/Gallery';
 import { Link } from 'react-router-dom';
 import ShopCategory from '../ShopCategory/ShopCategory';
 import AllToysSection from '../../Shared/AllToysSection/AllToysSection';
-
 const Home = () => {
     const galleries = [
         { id: 1, image: "https://i.ibb.co/Tgy6tCt/princess-1.jpg" },
@@ -33,11 +32,11 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div className='my-12 my-container mx-auto text-center'>
+            <div className='my-12 my-container'>
+                <ShopCategory></ShopCategory>
                 <Link to='/#'>
                     <AllToysSection></AllToysSection>
                 </Link>
-                <ShopCategory></ShopCategory>
             </div>
         </div>
     );
