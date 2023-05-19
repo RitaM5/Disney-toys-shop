@@ -1,6 +1,9 @@
 import React from 'react';
 import Banner from '../../Shared/Banner/Banner';
 import Gallery from '../Gallery/Gallery';
+import { Link } from 'react-router-dom';
+import AllToys from '../AllToys/AllToys';
+import ShopCategory from '../ShopCategory/ShopCategory';
 
 const Home = () => {
     const galleries = [
@@ -23,11 +26,18 @@ const Home = () => {
             <div className='my-container'>
                 <h1 className='underline underline-offset-4 font-semibold text-2xl text-center'>Gallery</h1>
                 <h2 className='mt-4 text-lg text-center'>We make your children happier with the best toys</h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-9'>
+                <div data-aos="fade-up"
+                    data-aos-duration="1000" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-9'>
                     {
                         galleries.map(gallery => <Gallery key={gallery.id} gallery={gallery}></Gallery>)
                     }
                 </div>
+            </div>
+            <div>
+                <Link to='#'>
+                    <AllToys></AllToys>
+                </Link>
+                <ShopCategory></ShopCategory>
             </div>
         </div>
     );

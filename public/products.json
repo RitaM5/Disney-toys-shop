@@ -1,0 +1,149 @@
+[
+    {
+      "toy_name": "Mickey Mouse Plush Toy",
+      "toy_img": "https://i.ibb.co/Tgy6tCt/princess-1.jpg",
+      "description": "Soft and cuddly Mickey Mouse plush toy.",
+      "price": 19.99,
+      "quantity": 10,
+      "category": "disney princes",
+      "displayName": "Yuvan",
+      "email": "info@toyemporium.com",
+      "photoURL": "https://i.ibb.co/Zdbx14Y/chef-1-rmv.png",
+      "ratings": 4.5
+    },
+    {
+      "toy_name": "Princess Elsa Doll",
+      "toy_img": "https://i.ibb.co/jZqftRS/princess-2.jpg",
+      "description": "Beautiful Elsa doll from Disney's Frozen.",
+      "price": 24.99,
+      "quantity": 5,
+      "category": "disney princes",
+      "displayName": "Nivana",
+      "email": "sales@wondertoys.com",
+      "photoURL": "https://i.ibb.co/Px6FNW7/chef-2-rmv.png",
+      "ratings": 4.8
+    },
+    {
+      "toy_name": "Buzz Lightyear Action Figure",
+      "toy_img": "https://i.ibb.co/djZT1CN/princess-7.jpg",
+      "description": "Poseable Buzz Lightyear action figure with lights and sounds.",
+      "price": 29.99,
+      "quantity": 8,
+      "category": "disney princes",
+      "displayName": "Johny",
+      "email": "hello@toygala.com",
+      "photoURL": "https://i.ibb.co/8mtF9fK/chef-3-rmv.png",
+      "ratings": 4.2
+    },
+    {
+      "toy_name": "Cinderella Doll",
+      "toy_img": "https://i.ibb.co/CJz5zhh/princess-4.jpg",
+      "description": "Classic Cinderella doll with a beautiful gown.",
+      "price": 17.99,
+      "quantity": 12,
+      "category": "disney princes",
+      "displayName": "Mahir",
+      "email": "sales@magictoys.com",
+      "photoURL": "https://i.ibb.co/jVnXxnN/chef-4-rmv.png",
+      "ratings": 4.6
+    },
+    {
+      "toy_name": "Donald Duck Plush Toy",
+      "toy_img": "https://i.ibb.co/Y7C83t1/frozen-1.jpg",
+      "description": "Soft and cuddly Donald Duck plush toy.",
+      "price": 15.99,
+      "quantity": 3,
+      "category": "frozen dolls",
+      "displayName": "Mehrab",
+      "email": "info@happytoys.com",
+      "photoURL": "https://i.ibb.co/vw5GnPn/chef-5-rmv.png",
+      "ratings": 4.0
+    },
+    {
+      "toy_name": "Woody Doll",
+      "toy_img": "https://i.ibb.co/7YPLVQb/frozen-7.jpg",
+      "description": "Adventurous Woody doll from Toy Story.",
+      "price": 21.99,
+      "quantity": 7,
+      "category": "frozen dolls",
+      "displayName": "Malik Zubayer",
+      "email": "sales@dreamtoys.com",
+      "photoURL": "https://i.ibb.co/mR2cJqv/chef-6-rmv.png",
+      "ratings": 4.4
+    },
+    {
+        "toy_name": "Minnie Mouse Plush Toy",
+        "toy_img": "https://i.ibb.co/LP9frHz/frozen-3.jpg",
+        "description": "Soft and cuddly Minnie Mouse plush toy.",
+        "price": 19.99,
+        "quantity": 10,
+        "category": "frozen dolls",
+        "displayName": "Jamal Vhuia",
+        "email": "info@toyworld.com",
+        "photoURL": "https://i.ibb.co/sCMY7Dt/seller-1.jpg",
+        "ratings": 4.7
+      },
+      {
+        "toy_name": "Ariel Mermaid Doll",
+        "toy_img": "https://i.ibb.co/rZZ7TP8/frozen-6.jpg",
+        "description": "Beautiful Ariel doll from The Little Mermaid.",
+        "price": 26.99,
+        "quantity": 6,
+        "category": "frozen dolls",
+        "displayName": "Selina",
+        "email": "sales@kidscorner.com",
+        "photoURL": "https://i.ibb.co/DfF23wz/seller-4.jpg",
+        "ratings": 4.9
+      },
+      {
+        "toy_name": "Lightning McQueen Diecast Car",
+        "toy_img": "https://i.ibb.co/zb7thCN/ani-1.jpg",
+        "description": "Detailed diecast model of Lightning McQueen from Cars.",
+        "price": 14.99,
+        "quantity": 15,
+        "category": "animation",
+        "displayName": "Rehan",
+        "email": "info@toysrus.com",
+        "photoURL": "https://i.ibb.co/sVKSK9c/seller-2.jpg",
+        "ratings": 4.3
+      },
+      {
+        "toy_name": "Belle Doll",
+        "toy_img": "https://i.ibb.co/D4PjNJX/ani-2.jpg",
+        "description": "Elegant Belle doll from Beauty and the Beast.",
+        "price": 23.99,
+        "quantity": 9,
+        "category": "animation",
+        "displayName": "Rehnuma",
+        "email": "sales@funtime.com",
+        "photoURL": "https://i.ibb.co/6X6Fs4Y/seller-5.jpg",
+        "ratings": 4.6
+      },
+      {
+        "toy_name": "Jasmine Doll",
+        "toy_img": "https://i.ibb.co/FzR4x0j/ani-3.jpg",
+        "description": "Beautiful Jasmine doll from Aladdin.",
+        "price": 21.99,
+        "quantity": 7,
+        "category": "animation",
+        "displayName": "Saad",
+        "email": "sales@magicworld.com",
+        "photoURL": "https://i.ibb.co/DwLgcYq/seller-3.jpg",
+        "ratings": 4.5
+      },
+      {
+        "toy_name": "Rapunzel Doll",
+        "toy_img": "https://i.ibb.co/6yKynDn/ani-4.jpg",
+        "description": "Beautiful Rapunzel doll with long, flowing hair.",
+        "price": 24.99,
+        "quantity": 5,
+        "category": "animation",
+        "displayName": "Hebaa",
+        "email": "sales@toyhaven.com",
+        "photoURL": "https://i.ibb.co/f4WQHC2/seller-6.jpg",
+        "ratings": 4.7
+      }
+    ]
+    
+    
+  
