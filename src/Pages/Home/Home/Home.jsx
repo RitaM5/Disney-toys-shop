@@ -2,8 +2,8 @@ import React from 'react';
 import Banner from '../../Shared/Banner/Banner';
 import Gallery from '../Gallery/Gallery';
 import { Link } from 'react-router-dom';
-import AllToys from '../AllToys/AllToys';
 import ShopCategory from '../ShopCategory/ShopCategory';
+import AllToysSection from '../../Shared/AllToysSection/AllToysSection';
 
 const Home = () => {
     const galleries = [
@@ -33,9 +33,9 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div>
-                <Link to='#'>
-                    <AllToys></AllToys>
+            <div className='my-12 my-container'>
+                <Link to='/#'>
+                    <AllToysSection></AllToysSection>
                 </Link>
                 <ShopCategory></ShopCategory>
             </div>
