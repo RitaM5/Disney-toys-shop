@@ -3,13 +3,13 @@ import Marquee from "react-fast-marquee";
 import AllToysCard from '../../Shared/AllToysSection/AllToysCard';
 import CategoryCard from './CategoryCard';
 const ShopCategory = () => {
-    const [products, setProducts] = useState([]);
+    const [toys, setToys] = useState([]);
     const [category, setCategory] = useState("");
     useEffect(() => {
         fetch(`https://disney-dolls-server.vercel.app/products/${category}`)
             .then(res => res.json())
             .then(data => {
-                setProducts(data)
+                setToys(data)
             })
     }, [category]);
     const handleTabClick = (tabName) => {
@@ -28,9 +28,9 @@ const ShopCategory = () => {
             <div data-aos="fade-up"
                 data-aos-duration="2000" className='my-14 grid gap-6 grid-cols-1 lg:grid-cols-3 md:grid-cols-2'>
                 {
-                    products.map(product => <CategoryCard
-                        key={product._id}
-                        product={product}
+                   toys.map(toy => <CategoryCard
+                        key={toy._id}
+                        toy={toy}
                     ></CategoryCard>)
                 }
             </div>

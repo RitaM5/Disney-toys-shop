@@ -14,8 +14,8 @@ const Signup = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        if (password.length < 6) {
-            setError('password must be six characters or longer');
+        if (password.length < 8) {
+            setError('password must be eight characters or longer');
             return;
         }
         createUser(email, password)

@@ -8,6 +8,8 @@ import Blog from "../Pages/Home/Blog/Blog";
 import AllToys from "../Pages/Home/AllToys/AllToys";
 import Details from "../Pages/Shared/Details/Details";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
+import MyToys from "../Pages/Home/MyToys/MyToys";
+import AddToys from "../Pages/Home/AddToys/AddToys";
 
 const router = createBrowserRouter([
     {
@@ -32,9 +34,17 @@ const router = createBrowserRouter([
                 element: <AllToys></AllToys>
             },
             {
+                path: 'mytoys',
+                element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
+            },
+            {
+                path: 'addatoys',
+                element: <AddToys></AddToys>
+            },
+            {
                 path: 'details/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://disney-dolls-server.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://disney-dolls-server.vercel.app/product/${params.id}`)
             },
             {
                 path: 'blog',

@@ -55,7 +55,7 @@ const Login = () => {
                             }
                         </form>
                         <button onClick={handleGoogleSignIn} className="btn btn-active btn-accent"><img src="https://img.icons8.com/color/30/undefined/google-logo.png" /> <span className='text-white'> Google</span></button>
-                        <p className='mt-1'><small className='font-semibold' style={{ fontSize: "14px" }}>Don't Have an Account ?</small> <Link to="/register" className=' underline text-green-600'>Please SignUp</Link></p>
+                        <p className='mt-1'><small className='font-semibold' style={{ fontSize: "14px" }}>Don't Have an Account ?</small> <Link to="/signup" className=' underline text-green-600'>Please SignUp</Link></p>
                     </div>
                 </div>
             </div>
