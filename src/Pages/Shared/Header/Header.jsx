@@ -11,7 +11,7 @@ const Header = () => {
             .catch(error => console.log(error));
     }
     return (
-        <header className='bg-green-100'>
+        <header className=' bg-lime-200'>
             <div className='my-container'>
                 <div className='flex items-center justify-between'>
                     <Link
@@ -21,7 +21,7 @@ const Header = () => {
                         className='inline-flex items-center'
                     >
                         <span className='inline-flex items-center text-2xl font-bold tracking-wide text-gray-800 '>
-                            <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design" /><span className='text-yellow-500'>DISNEY</span><span className='text-green-700'>SHOP</span>
+                            <img className='' src="https://img.icons8.com/external-others-inmotus-design/80/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design" /><span className='text-yellow-600 text-2xl'>DISNEY</span><span className='text-green-700'>PLUS</span>
                         </span>
                     </Link>
                     <ul className='items-center hidden space-x-8 lg:flex'>
@@ -46,7 +46,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                         {
-                            user && <li>
+                            user?.email && <li>
                                 <NavLink
                                     to='/mytoys'
                                     aria-label='My Toys'
@@ -58,7 +58,7 @@ const Header = () => {
                             </li>
                         }
                         {
-                            user && <li>
+                            user?.email && <li>
                                 <NavLink
                                     to='/addatoys'
                                     aria-label='Add A Toy'
@@ -100,7 +100,7 @@ const Header = () => {
                         {
                             user ? '' :
                                 <Link to="/signup">
-                                    <button className='bg-[#6f7391] py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
+                                    <button className='bg-pink-500 py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
                                         SignUp
                                     </button>
                                 </Link>
@@ -141,7 +141,7 @@ const Header = () => {
                                                 className='inline-flex items-center'
                                             >
                                                 <span className=' text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                                                    <span className='text-yellow-500'>Disney</span><span className='text-green-600'>Shop</span>
+                                                    <span className='text-yellow-600'>Disney</span><span className='text-green-600'>Plus</span>
                                                 </span>
                                             </Link>
                                         </div>
@@ -184,7 +184,7 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             {
-                                                user && <li>
+                                                user?.email && <li>
                                                 <Link
                                                     to='/mytoys'
                                                     aria-label='My Toys'
@@ -196,7 +196,7 @@ const Header = () => {
                                             </li>
                                             }
                                             {
-                                                user && <li>
+                                                user?.email && <li>
                                                 <Link
                                                     to='/addatoy'
                                                     aria-label='Add A Toy'
@@ -237,7 +237,7 @@ const Header = () => {
                                                 {
                                                     user ? '' :
                                                         <Link to="/signup">
-                                                            <button className='bg-[#6f7391] py-2 px-4 text-white rounded-md'>
+                                                            <button className='bg-pink-500 py-2 px-4 text-white rounded-md'>
                                                                 SignUp
                                                             </button>
                                                         </Link>
