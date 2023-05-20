@@ -1,6 +1,6 @@
 import React from 'react';
 import { RiDeleteBinLine } from 'react-icons/ri';
-const MyToysRows = ({ toy, index }) => {
+const MyToysRows = ({ toy, index , handleDelete}) => {
     const { _id, toy_name, toy_img, category, quantity, price, description, displayName } = toy;
     return (
         <tr className='text-center'>
@@ -28,7 +28,7 @@ const MyToysRows = ({ toy, index }) => {
             </td>
             <td>
                 <button className=' bg-green-600 px-3 py-1 font-lg rounded-2xl text-white text-sm'>Edit</button>
-                <button className='ml-4 bg-gray-300 p-2 rounded-full'><RiDeleteBinLine /></button>
+                <button onClick={() => handleDelete(_id)} className='ml-4 bg-gray-300 p-2 rounded-full'><RiDeleteBinLine /></button>
             </td>
         </tr>
     );

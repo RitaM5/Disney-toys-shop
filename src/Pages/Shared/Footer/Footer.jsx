@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <div className='bg-gray-800 text-center py-7'>
             <img className='mx-auto' src="https://img.icons8.com/external-others-inmotus-design/100/external-Doll-toys-others-inmotus-design.png" alt="external-Doll-toys-others-inmotus-design" />
-            <span className='text-yellow-500 text-3xl font-bold'>DISNEY</span><span className='text-2xl font-semibold text-green-700'>SHOP</span>
+            <span className='text-yellow-500 text-3xl font-bold'>DISNEY</span><span className='text-2xl font-semibold text-green-700'>PLUS</span>
             <p className='text-white text-sm'>TOYS AND GAMES</p>
             <div className='flex gap-2 justify-center items-center mt-4'>
                 <img src="https://img.icons8.com/nolan/48/facebook-new.png" alt="facebook-new" />
