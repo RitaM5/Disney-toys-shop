@@ -198,9 +198,9 @@ const Header = () => {
                                             {
                                                 user?.email && <li>
                                                 <Link
-                                                    to='/addatoy'
-                                                    aria-label='Add A Toy'
-                                                    title='Add A Toy'
+                                                     to='/addatoys'
+                                                     aria-label='Add A Toy'
+                                                     title='Add A Toy'
                                                     className=' font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     Add A Toy
