@@ -31,4 +31,3 @@ const Footer = () => {
 };
 
 export default Footer;
-//https://junotoys.themerex.net/

@@ -1,6 +1,8 @@
 import React from 'react';
 import Banner from '../../Shared/Banner/Banner';
 import Gallery from '../Gallery/Gallery';
+import baby1 from '../../../assets/baby-1.jpg';
+import baby2 from '../../../assets/baby-2.jpg'
 import ShopCategory from '../ShopCategory/ShopCategory';
 const Home = () => {
     const galleries = [
@@ -32,6 +34,49 @@ const Home = () => {
             </div>
             <div className=' my-container'>
                 <ShopCategory></ShopCategory>
+            </div>
+            <div className='grid gap-20 grid-cols-1 md:grid-cols-1 lg:grid-cols-2  my-container'>
+                <div data-aos="zoom-out-right" data-aos-duration="1000">
+                    <img className='rounded-2xl hover:scale-125 ease-in-out duration-500' src={baby2} alt="" srcset="" />
+                </div>
+                <div className=' space-y-5' data-aos="zoom-out-left" data-aos-duration="1000">
+                    <p className='font-semibold'>CREATIVE APPROACH</p>
+                    <h1 className='text-4xl font-semibold'>We help you take care of the kids</h1>
+                    <p className='text-lg'>Not only do we sell toys, but we also try to make sure that your children are safe playing, learning, and having fun!</p>
+                    <img className='rounded-2xl mt-3' src={baby1} alt="" srcset="" />
+                </div>
+            </div>
+            <div className='my-container'>
+                <div data-aos="zoom-in-up" data-aos-duration="1000" className='grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-x my-12'>
+                    <div className='inline-flex items-center w-full gap-3'>
+                        <img src="https://img.icons8.com/external-outline-juicy-fish/64/external-cost-digital-nomad-outline-outline-juicy-fish.png" alt="external-cost-digital-nomad-outline-outline-juicy-fish" />
+                        <span>
+                            <p className='text-lg font-semibold'>Best Prices</p>
+                            <p>Affordable</p>
+                        </span>
+                    </div>
+                    <div className='inline-flex items-center w-full gap-3'>
+                        <img src="https://img.icons8.com/material-rounded/64/secured-file.png" alt="secured-file" />
+                        <span>
+                            <p className='text-lg font-semibold'>Buyers Protection</p>
+                            <p>Guarantee</p>
+                        </span>
+                    </div>
+                    <div className='inline-flex items-center w-full gap-3'>
+                        <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/external-offer-ecommerce-kiranshastry-lineal-kiranshastry.png" alt="external-offer-ecommerce-kiranshastry-lineal-kiranshastry" />
+                        <span>
+                            <p className='text-lg font-semibold'>Fast Shippment</p>
+                            <p>Express</p>
+                        </span>
+                    </div>
+                    <div className='inline-flex items-center w-full gap-3'>
+                        <img src="https://img.icons8.com/ios/64/technical-support.png" alt="technical-support" />
+                        <span>
+                            <p className='text-lg font-semibold'>Live Support</p>
+                            <p>Online</p>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     );
