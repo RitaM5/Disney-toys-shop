@@ -6,7 +6,7 @@ const Blog = () => {
         <div className='bg-base-200'>
             <Banner></Banner>
             <div className='my-container'>
-                <p className='text-3xl font-semibold text-center mt-4'>Ask Something New!</p>
+                <p className='text-3xl font-semibold text-center mt-6'>Ask Something New!</p>
                 <div className="hero min-h-screen">
                     <div className="hero-content flex-col-reverse lg:flex-row-reverse">
                         <img src={img1} className=" rounded-lg shadow-2xl" />

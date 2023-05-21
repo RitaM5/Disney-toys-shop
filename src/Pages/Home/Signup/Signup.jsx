@@ -32,21 +32,23 @@ const Signup = () => {
             })
     }
     return (
-        <div className='mt-3 mb-20 my-container'>
-            <div className='lg:w-96 md:w-96 sm:w-full mx-auto'>
-                <h1 className='text-left text-4xl font-bold text-blue-400 my-6'>SignUp</h1>
-                <div className="card w-full bg-blue-200">
-                    <form className="card-body" onSubmit={handleRegister}>
-                        <input type="text" name="name" placeholder="name" className="input w-full" required />
-                        <input type="email" name="email" placeholder="email" className="input w-full" required />
-                        <input type="password" name="password" placeholder="password" className="input w-full" required />
-                        <input type="text" name="photo" placeholder="photo url" className="input w-full" required />
-                        <button type='submit' className="btn btn-primary mt-3">SignUp</button>
-                        {
-                            error && <p className='text-red-500 font-semibold mt-2'>{error}</p>
-                        }
-                        <p className='mt-1'><small className='font-semibold' style={{ fontSize: "14px" }}>Already Have an Account ?</small> <Link to="/login" className=' underline text-green-600'>Please LogIn</Link></p>
-                    </form>
+        <div className='bg-pink-100'>
+            <div className='my-container'>
+                <div className='lg:w-96 md:w-96 sm:w-full mx-auto my-8 mb-12'>
+                    <h1 className='text-left text-4xl font-bold text-slate-500 my-6'>SignUp</h1>
+                    <div className="card w-full bg-pink-200">
+                        <form className="card-body" onSubmit={handleRegister}>
+                            <input type="text" name="name" placeholder="name" className="input w-full" required />
+                            <input type="email" name="email" placeholder="email" className="input w-full" required />
+                            <input type="password" name="password" placeholder="password" className="input w-full" required />
+                            <input type="text" name="photo" placeholder="photo url" className="input w-full" required />
+                            <button type='submit' className="btn btn-primary mt-3">SignUp</button>
+                            {
+                                error && <p className='text-red-500 font-semibold mt-2'>{error}</p>
+                            }
+                            <p className='mt-1'><small className='font-semibold' style={{ fontSize: "14px" }}>Already Have an Account ?</small> <Link to="/login" className=' underline text-green-600'>Please LogIn</Link></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

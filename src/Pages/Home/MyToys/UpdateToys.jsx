@@ -42,19 +42,19 @@ const UpdateToys = () => {
                             <label className="label">
                                 <span className="label-text font-semibold">Price :</span>
                             </label>
-                            <input type="number" defaultValue={price} placeholder="$" name='price' className="input input-bordered" />
+                            <input type="number" defaultValue={price} placeholder="$" name='price' className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text font-semibold">Quantity :</span>
                             </label>
-                            <input type="number" defaultValue={quantity} name='quantity' className="input input-bordered" />
+                            <input type="number" defaultValue={quantity} name='quantity' className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text font-semibold">Description :</span>
                             </label>
-                            <input type="text" defaultValue={description} name='description' className="input input-bordered" />
+                            <input type="text" defaultValue={description} name='description' className="input input-bordered" required />
                         </div>
                     </div>
                     <div className="form-control text-center mx-auto w-56 mt-6">

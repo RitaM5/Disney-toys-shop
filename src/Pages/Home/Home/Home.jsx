@@ -18,19 +18,19 @@ const Home = () => {
         { id: 12, image: "https://i.ibb.co/6yKynDn/ani-4.jpg" },
     ]
     return (
-        <div>
+        <div className='bg-pink-100'>
             <Banner></Banner>
             <div className='my-container mx-auto text-center'>
                 <h1 className='underline underline-offset-4 font-semibold text-2xl text-center'>Gallery</h1>
-                <h2 className='mt-4 text-lg text-center'>We make your children happier with the best toys</h2>
+                <h2 className='my-5 text-lg text-center'>We make your children happier with the best toys</h2>
                 <div data-aos="fade-up"
-                    data-aos-duration="1000" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-9'>
+                    data-aos-duration="1000" className=' mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-9'>
                     {
                         galleries.map(gallery => <Gallery key={gallery.id} gallery={gallery}></Gallery>)
                     }
                 </div>
             </div>
-            <div className='my-12 my-container'>
+            <div className=' my-container'>
                 <ShopCategory></ShopCategory>
             </div>
         </div>

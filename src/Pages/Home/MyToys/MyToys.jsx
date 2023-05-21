@@ -37,9 +37,10 @@ const MyToys = () => {
         }
     }
     return (
-        <div className=' bg-gray-300'>
+        <div className=' bg-pink-100'>
             <div className='my-container'>
                 <h1 className='text-center text-2xl font-semibold underline underline-offset-4 mt-3'>My Tyos</h1>
+                <p className='text-center mt-4'>These are the toys you addedd, which you added to sell !</p>
                 <div className=" my-8 rounded p-4 overflow-x-auto">
                     <table className=" table w-full">
                         {/* head */}

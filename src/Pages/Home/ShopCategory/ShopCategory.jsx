@@ -18,6 +18,7 @@ const ShopCategory = () => {
     return (
         <div className='my-container text-center'>
             <h1 className='font-semibold underline underline-offset-4 text-2xl text-center mb-4'>Shop By Category</h1>
+            <p className='text-center my-2'>Select the categories and buy the favorite dolls for your babies !!</p>
             <Marquee>
                 <div className='grid gap-2 grid-cols-1 md:grid-cols-3 items-center mt-8'>
                     <button onClick={() => handleTabClick("disney")} className="btn rounded-3xl btn-active btn-primary">Disney Princes</button>
