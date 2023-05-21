@@ -14,7 +14,7 @@ const UpdateToys = () => {
         const updateInfo = {
             quantity: quantity,
             description: description,
-            price: price,
+            price: parseInt(price),
         }
         fetch(`https://disney-dolls-server.vercel.app/product/${_id}`, {
             method: 'PUT',

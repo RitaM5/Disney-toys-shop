@@ -24,7 +24,7 @@ const AddToys = () => {
             category: category,
             quantity: quantity,
             description: description,
-            price: price,
+            price: parseInt(price),
             ratings: ratings
         }
 
