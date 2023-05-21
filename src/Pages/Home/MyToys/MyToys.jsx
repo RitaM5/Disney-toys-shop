@@ -1,11 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
 import MyToysRows from './MyToysRows';
-import { FiArrowDown } from 'react-icons/fi';
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [addToys, setAddToys] = useState([]);
-    const [sortData, setSortData] = useState(false);
     const url = `https://disney-dolls-server.vercel.app/sellerToys?email=${user?.email}`;
     useEffect(() => {
         fetch(url)
@@ -14,11 +12,7 @@ const MyToys = () => {
                 setAddToys(data)
             }
             )
-    }, [url, sortData]);
-    const sortToysData = () => {
-        setSortData(!sortData)
-        console.log(sortData);
-    }
+    }, [url]);
     const handleDelete = id => {
         const proceed = confirm('Are you sure you want to delete');
         if (proceed) {
@@ -53,7 +47,7 @@ const MyToys = () => {
                                 <th>IMAGE</th>
                                 <th>CATEGORY</th>
                                 <th>QUANTITY</th>
-                                <th className='flex items-center'>PRICE<FiArrowDown onClick={sortToysData} className='ml-1' /></th>
+                                <th>PRICE</th>
                                 <th>DETAILS</th>
                                 <th>ACTION</th>
                             </tr>
