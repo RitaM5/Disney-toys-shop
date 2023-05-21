@@ -14,9 +14,9 @@ const MyToys = () => {
                 setAddToys(data)
             }
             )
-    }, [url]);
+    }, [url, sortData]);
     const sortToysData = () => {
-        setSortData(true)
+        setSortData(!sortData)
         console.log(sortData);
     }
     const handleDelete = id => {
@@ -39,19 +39,19 @@ const MyToys = () => {
     return (
         <div className=' bg-gray-300'>
             <div className='my-container'>
-                <h1 className='text-center text-2xl font-semibold underline underline-offset-4 mt-3 text-white'>My Tyos</h1>
-                <div className="w-full my-8 rounded p-4">
-                    <table className="overflow-x-auto overflow-hidden table w-full">
+                <h1 className='text-center text-2xl font-semibold underline underline-offset-4 mt-3'>My Tyos</h1>
+                <div className=" my-8 rounded p-4 overflow-x-auto">
+                    <table className=" table w-full">
                         {/* head */}
                         <thead className=''>
                             <tr className='text-center'>
-                                <th>No</th>
-                                <th>Seller Name</th>
-                                <th>Toys Name</th>
+                                <th className=''>No</th>
+                                <th>SELLER NAME</th>
+                                <th>TOYS NAME</th>
                                 <th>IMAGE</th>
                                 <th>CATEGORY</th>
                                 <th>QUANTITY</th>
-                                <th className='inline-flex items-center'>PRICE<FiArrowDown onClick={sortToysData} className='ml-1' /></th>
+                                <th className='flex items-center'>PRICE<FiArrowDown onClick={sortToysData} className='ml-1' /></th>
                                 <th>DETAILS</th>
                                 <th>ACTION</th>
                             </tr>
@@ -66,7 +66,6 @@ const MyToys = () => {
                                 ></MyToysRows>)
                             }
                         </tbody>
-
                     </table>
                 </div>
             </div>

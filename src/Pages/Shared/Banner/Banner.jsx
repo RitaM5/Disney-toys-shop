@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className="carousel w-full h-[600px]">
             <div id="slide1" className="carousel-item relative w-full">
-                <img src='https://i.ibb.co/4jBqysR/bg-1.jpg' className="w-full" />
+                <img src={img4} className="w-full" />
                 <div className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
                     <div className='text-white text-center space-y-7 pl-12' data-aos="zoom-in" data-aos-duration="2000">
                         <h2 className='text-6xl font-semibold'>
@@ -39,7 +39,7 @@ const Banner = () => {
                 </div>
             </div>
             <div id="slide3" className="carousel-item relative w-full">
-                <img src={img4} className="w-full" />
+                <img src='https://i.ibb.co/4jBqysR/bg-1.jpg' className="w-full" />
                 <div data-aos="zoom-in" data-aos-duration="2000" className="flex justify-center w-full items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] absolute left-0 top-0 h-full">
                     <div className='text-white text-center space-y-7 pl-12'>
                         <h2 className='text-6xl font-semibold'>

@@ -6,7 +6,7 @@ const MyToysRows = ({ toy, index, handleDelete }) => {
     return (
         <tr className='text-center'>
             <td>
-                {index + 1}.
+                {index + 1}
             </td>
             <td className='font-semibold'>
                 {displayName}

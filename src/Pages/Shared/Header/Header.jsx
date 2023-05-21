@@ -88,7 +88,7 @@ const Header = () => {
                             </p>
                         }
                         {
-                            user ? <button onClick={handleLogOut} className='bg-green-300 py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
+                            user ? <button onClick={handleLogOut} className='bg-green-500 py-2 px-4 md:hidden hidden lg:block text-white rounded-md'>
                                 SignOut
                             </button> :
                                 <Link to="/login">
