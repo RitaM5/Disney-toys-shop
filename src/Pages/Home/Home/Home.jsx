@@ -82,12 +82,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <LazyLoadImage
-                    className='w-full' src={dolls} alt=""
-                    effect="blur"
-                />
-            </div>
+            <div className='w-full'>
+                <img className='w-full' src={dolls} alt="" srcset="" />
+               </div>
             <div className='bg-blue-900 p-10'>
                 <Testimonial></Testimonial>
             </div>
