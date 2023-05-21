@@ -49,7 +49,7 @@ const AddToys = () => {
             <div className='my-container'>
                 <h2 className='text-center text-2xl font-semibold underline underline-offset-4 mt-3'>Add Toys</h2>
                 <p className='text-center mt-4'>Add your toys to sell here !</p>
-                <div className='card w-full bg-base-200 shadow-xl p-6 my-10'>
+                <div data-aos="fade-left" data-aos-duration="1000" className='card w-full bg-base-200 shadow-xl p-6 my-10'>
                     <form onSubmit={handleAddToys}>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                             <div className="form-control">
