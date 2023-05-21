@@ -1,11 +1,7 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
 
 const AddToys = () => {
-    // const toys = useLoaderData();
-    // console.log(toys);
-    // const { _id } = toys;
     const { user } = useContext(AuthContext);
     const handleAddToys = event => {
         event.preventDefault();
