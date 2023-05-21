@@ -3,7 +3,11 @@ import Banner from '../../Shared/Banner/Banner';
 import Gallery from '../Gallery/Gallery';
 import baby1 from '../../../assets/baby-1.jpg';
 import baby2 from '../../../assets/baby-2.jpg'
+import dolls from '../../../assets/dolls.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import ShopCategory from '../ShopCategory/ShopCategory';
+import Testimonial from '../Testimonial/Testimonial';
 const Home = () => {
     const galleries = [
         { id: 1, image: "https://i.ibb.co/Tgy6tCt/princess-1.jpg" },
@@ -78,7 +82,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            
+            <div>
+                <LazyLoadImage
+                    className='w-full' src={dolls} alt=""
+                    effect="blur"
+                />
+            </div>
+            <div className='bg-blue-900 p-10'>
+                <Testimonial></Testimonial>
+            </div>
         </div>
     );
 };
