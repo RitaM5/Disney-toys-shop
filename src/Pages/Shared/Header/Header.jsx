@@ -60,7 +60,7 @@ const Header = () => {
                         {
                             user?.email && <li>
                                 <NavLink
-                                    to='/addatoys'
+                                    to='/addtoys'
                                     aria-label='Add A Toy'
                                     title='Add A Toy'
                                     className={({ isActive }) => (isActive ? 'active' : 'default')}
@@ -198,7 +198,7 @@ const Header = () => {
                                             {
                                                 user?.email && <li>
                                                 <Link
-                                                     to='/addatoys'
+                                                     to='/addtoys'
                                                      aria-label='Add A Toy'
                                                      title='Add A Toy'
                                                     className=' font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
