@@ -4,7 +4,8 @@ import MyToysRows from './MyToysRows';
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [addToys, setAddToys] = useState([]);
-    const url = `https://disney-dolls-server.vercel.app/sellerToys?email=${user?.email}`;
+    const [sort, setSort] = useState(true);
+    const url = `https://disney-dolls-server.vercel.app/sellerToys?email=${user?.email}&sort=true`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -13,6 +14,10 @@ const MyToys = () => {
             }
             )
     }, [url]);
+    const handleSort = () => {
+        setSort(!sort)
+        console.log(sort);
+    }
     const handleDelete = id => {
         const proceed = confirm('Are you sure you want to delete');
         if (proceed) {
@@ -35,6 +40,7 @@ const MyToys = () => {
             <div className='my-container'>
                 <h1 className='text-center text-2xl font-semibold underline underline-offset-4 mt-3'>My Tyos</h1>
                 <p className='text-center mt-4'>These are the toys you addedd, which you added to sell !</p>
+                <button onClick={handleSort}>sort by</button>
                 <div data-aos="fade-up"
                     data-aos-duration="1000" className=" my-8 rounded p-4 overflow-x-auto">
                     <table className=" table w-full">
